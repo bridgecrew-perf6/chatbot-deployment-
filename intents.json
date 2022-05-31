@@ -1,0 +1,91 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Musta",
+        "Hello",
+        "kumusta",
+        "kamusta",
+        "Gudam",
+        "gud am",
+        "gud pm",
+        "gud morning",
+        "good morning",
+        "gud day",
+        "good day",
+        "hoy",
+        "gud evening",
+        "good evening"
+
+
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Magandang araw sa'yo!",
+        "Anong mapaglilingkod ko?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","babye",""],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Keep Safe!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","salamat","slmat","slmt","salamt"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "Welcome"]
+    },
+    {
+      "tag": "positive",
+      "patterns": [ "maayos",
+        "marespeto",
+        "mabait",
+        "magalang",
+	"sakto lang",
+	""
+      ],
+      "responses": [
+        "Sheesh!",
+        "We will continue to serve you with utmost responsibility and care"
+      ]
+    },
+    {
+      "tag": "negative",
+      "patterns": [
+        "bastos", "masikip"
+        "maskip n pinaupo pa",
+        "masikip n pinaupo pa",
+	"maskip na pinaupo pa",
+	"wla kayo respeto",
+	"wala kayo respeto",
+	"wlang galang",
+	"wala",
+	"mabilis magpatakbo",
+	"muntik mabangga",
+	"nabunggo",
+	"nakadali",
+	"nabangga","bumangga"
+	""
+      ],
+      "responses": [
+        "We're sorry to hear that,",
+        "Pasensya po sa abala",
+      ]
+    }
+  ]
+}
