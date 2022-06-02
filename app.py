@@ -9,7 +9,7 @@ CORS(app)
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '1234'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'flask'
 
 mysql = MySQL(app)
@@ -21,12 +21,12 @@ def index_get():
 @app.route('/index', methods=['POST','GET'])
 def index():
     if request.method == 'POST':
-        messages = request.form['messages']
+        messages = request.get_json().get("message")
         cursor = mysql.connection.cursor()
         cursor.execute("INSERT INTO messages(messages) VALUES(%s)",[messages])
         mysql.connection.commit()
         cursor.close()
-    return render_template("base.html")
+    return jsonify( {"answer": "Inserted Successfully"})
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
